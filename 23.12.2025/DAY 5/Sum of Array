@@ -1,0 +1,7 @@
+class Solution {
+    public int sum(int[] arr) {
+        int s=0;
+        for(int n:arr) s+=n;
+        return s;
+    }
+}
