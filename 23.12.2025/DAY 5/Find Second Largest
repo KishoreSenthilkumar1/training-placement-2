@@ -1,0 +1,12 @@
+class Solution {
+    public int secondLargest(int[] arr) {
+        int max=Integer.MIN_VALUE, sec=Integer.MIN_VALUE;
+        for(int n:arr){
+            if(n>max){
+                sec=max; max=n;
+            } else if(n>sec && n!=max)
+                sec=n;
+        }
+        return sec;
+    }
+}
